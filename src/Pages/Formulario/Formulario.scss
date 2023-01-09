@@ -1,5 +1,29 @@
-input{
-    width: 350px;
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 25% 5% 5%;
+    
+}
+.bl1{
+    display: flex;    
+}
+.bl2{
+    display: flex;
+}
+
+.button_enviar{
+    margin-top: 15px;
+    max-width: 50px;
+}
+.input_box{
+    margin: 0 5px 0 0px;
+    max-width: 150px;
     height: 20px;
 }
 
+.input_box_email{
+    margin: 0 5px 0 0px;
+    width: 210px;
+    height: 20px;
+}
