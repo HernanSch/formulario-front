@@ -1,0 +1,17 @@
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: space-around;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    font-size: large; 
+    max-width: 200px; 
+    margin: 5%;  
+}
+
+ul{
+    list-style:none;
+}
+

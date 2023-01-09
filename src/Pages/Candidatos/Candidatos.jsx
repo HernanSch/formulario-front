@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react"
 import axios from "axios";
-
+import "./Candidatos.scss"
 
 const Candidatos = () => {
 
@@ -27,17 +27,19 @@ const Candidatos = () => {
         {allCandidatos && allCandidatos.map((candidatos) => {
             return (
             <div>
-                <div>
-                    <h4>Nombre</h4>
-                    <p>{candidatos.name}</p>
-                    <h4>Apellidos</h4>
-                    <p>{candidatos.apellidos}</p>
-                    <h4>Correo electronico</h4>
-                    <p>{candidatos.mail}</p>
-                    <h4>Telefono</h4>
-                    <p>{candidatos.telefono}</p>
-                    <h4>Curriculum Vitae</h4>
-                    <p>{candidatos.cv}</p>
+                <div className="box">
+                    <ul>
+                        <li><h4>Nombre</h4></li>
+                        <li><p>{candidatos.name}</p></li>
+                        <li><h4>Apellidos</h4></li>
+                        <li><p>{candidatos.apellidos}</p></li>
+                        <li><h4>Correo electronico</h4></li>
+                        <li><p>{candidatos.mail}</p></li>
+                        <li><h4>Telefono</h4></li>
+                        <li><p>{candidatos.telefono}</p></li>
+                        <li><h4>Curriculum Vitae</h4></li>
+                        <li><p>{candidatos.cv}</p></li>
+                    </ul>
                 </div>
             </div>
             )
